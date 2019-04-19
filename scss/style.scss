@@ -1,10 +1,11 @@
-$gray: #DCDCDC;
+$gray: #e6ecf0;
 
 body {
     background: $gray;
     margin: 0;
 
-    .wrong-pass, .please-enter {
+    .wrong-pass,
+    .please-enter {
         color: red;
     }
 
@@ -12,7 +13,7 @@ body {
         .logo-container {
             width: 360px;
             height: 220px;
-            border: 10px solid #005590;
+            border: 10px solid #00559045;
             margin: 30px auto 0;
             text-align: center;
 
@@ -36,6 +37,68 @@ body {
             a {
                 width: 200px;
             }
+        }
+
+        .new-post-container {
+            width: 900px;
+            height: 235px;
+            border: 1px solid #aeb7bd;
+            margin: 20px auto;
+            background: #fff;
+            border-radius: 5px;
+
+            .message-container {
+                margin: 20px auto;
+                width: 700px;
+                position: relative;
+                // background-color: #1ca1f2;
+                // border-color: #1ca1f2;
+
+                // border: 1px solid;
+                .avatar {
+                    width: 30px;
+                    height: 30px;
+                    // border: 1px solid #;
+                    border-radius: 50%;
+                    overflow: hidden;
+
+                    img {
+                        height: 30px;
+                    }
+                }
+
+                textarea {
+                    border: none;
+                    border-radius: 6px;
+                    padding: 12px 20px;
+                    box-sizing: border-box;
+                    background: #f5f8fa;
+                    resize: none;
+                }
+
+                a.btn.btn-primary.btn-lg.active {
+                    position: absolute;
+                    right: 0;
+                    top: -15px;
+                    background-color: #1ca1f2 !important;
+                    border-color: #1ca1f2 !important;
+                }
+
+            }
+        }
+
+        .all-tweets {
+        	width: 1080px;
+        	margin: 20px auto;
+        	border: 1px solid #aeb7bd;
+        	border-radius: 5px;
+        	min-height: 300px;
+
+        	ul{
+        		li{
+        			list-style: none;
+        		}
+        	}
         }
     }
 }
