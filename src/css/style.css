@@ -1,21 +1,19 @@
 body {
   background: #DCDCDC;
   margin: 0; }
-  body .wrong-pass {
+  body .wrong-pass, body .please-enter {
     color: red; }
   body .main-body .logo-container {
-    width: 500px;
-    height: 180px;
-    border: 10px solid #362e6a;
-    margin: 100px auto 0;
+    width: 360px;
+    height: 220px;
+    border: 10px solid #005590;
+    margin: 30px auto 0;
     text-align: center; }
     body .main-body .logo-container img {
-      height: 200px;
-      margin-top: -20px;
-      margin-left: 10px; }
+      height: 200px; }
   body .main-body .login-section {
     max-width: 500px;
-    margin: 50px auto 0;
+    margin: 30px auto 0;
     border: 2px solid #808080;
     padding: 30px; }
   body .main-body .btn-container {

@@ -9,10 +9,19 @@ jQuery(document).ready(() => {
         console.log(myemail);
         console.log(mypassword);
 
-        // if (myemail && mypassword) {
-        localStorage.setItem('Email', myemail);
-        localStorage.setItem('Password', mypassword);
-        // }
+        if (myemail && mypassword) {
+            localStorage.setItem('Email', myemail);
+            localStorage.setItem('Password', mypassword);
+        }
+
+        if (myemail.length >= 3 && mypassword.length >= 3) {
+            console.log("corrent");
+            window.location = '../other-pages/sign-in.html';
+            // window.open('../other-pages/review.html');
+        } else {
+            jQuery('.please-enter').html("Please enter you email and password");
+        }
+
         // jQuery('#result').html(`user: ${myemail}</br> password: ${mypassword}`);
     });
 
@@ -36,10 +45,10 @@ jQuery(document).ready(() => {
 
         if (youremail == `${emailvalue}` && yourpassword == `${passwordvalue}`) {
             console.log("corrent");
-             window.location = '../other-pages/review.html';
+            window.location = '../other-pages/review.html';
             // window.open('../other-pages/review.html');
-        }else{
-        	jQuery('.wrong-pass').html("incorrect User or Password!!");
+        } else {
+            jQuery('.wrong-pass').html("incorrect User or Password!!");
         }
 
 
