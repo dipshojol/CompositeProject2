@@ -1,4 +1,5 @@
 body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
   background: #e6ecf0;
   margin: 0; }
   body .wrong-pass,
@@ -47,17 +48,63 @@ body {
         box-sizing: border-box;
         background: #f5f8fa;
         resize: none; }
-      body .main-body .new-post-container .message-container a.btn.btn-primary.btn-lg.active {
+      body .main-body .new-post-container .message-container a.tweet-btn {
         position: absolute;
         right: 0;
         top: -15px;
         background-color: #1ca1f2 !important;
-        border-color: #1ca1f2 !important; }
+        border-color: #1ca1f2 !important;
+        cursor: pointer; }
   body .main-body .all-tweets {
-    width: 1080px;
+    width: 800px;
     margin: 20px auto;
     border: 1px solid #aeb7bd;
     border-radius: 5px;
-    min-height: 300px; }
-    body .main-body .all-tweets ul li {
-      list-style: none; }
+    position: relative; }
+    body .main-body .all-tweets span {
+      width: 30px;
+      display: flex;
+      justify-content: right;
+      align-items: right; }
+      body .main-body .all-tweets span svg {
+        height: 20px; }
+    body .main-body .all-tweets ul#tweeted {
+      padding: 10px 0 0 0;
+      margin: 0;
+      max-width: 100%;
+      background: #fff;
+      border-radius: 3px; }
+      body .main-body .all-tweets ul#tweeted li {
+        list-style: none;
+        border-bottom: 1px solid #b2c6d6;
+        padding-top: 10px;
+        margin: 0; }
+        body .main-body .all-tweets ul#tweeted li .avatar {
+          margin-top: 1px; }
+          body .main-body .all-tweets ul#tweeted li .avatar .inner-avatar {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            overflow: hidden;
+            padding-left: 0 !important; }
+            body .main-body .all-tweets ul#tweeted li .avatar .inner-avatar img {
+              height: 30px; }
+        body .main-body .all-tweets ul#tweeted li .user-name {
+          padding-left: 0; }
+          body .main-body .all-tweets ul#tweeted li .user-name p {
+            padding-left: 0; }
+      body .main-body .all-tweets ul#tweeted :last-child {
+        border-bottom: 0; }
+  body .main-body .container {
+    max-width: 720px; }
+  body .main-body .clear-btn-container {
+    width: 1080px;
+    margin: 20px auto;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    body .main-body .clear-btn-container a.clear-btn {
+      background: black !important;
+      cursor: pointer;
+      width: 300px; }

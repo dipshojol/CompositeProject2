@@ -52,51 +52,8 @@ jQuery(document).ready(() => {
         }
     });
 
-    jQuery('.tweet-btn').on('click', () => {
-        let myTweet = jQuery('.tweet-text').val();
+    // jQuery('.tweet-btn').on('click', () => {
 
-        // let key = 0;
-
-
-        // for (let i = 0; i < localStorage.length; i++) {
-
-
-
-        if (localStorage.length > 0) {
-            localStorage.setItem(`${localStorage.length}`, myTweet);
-        } else {
-            localStorage.setItem(`${localStorage.length+1}`, myTweet);
-
-        }
-
-        const keys = localStorage.key();
-        // const value = localStorage.getItem(key);
-
-        // localStorage.setItem(key, value);
-
-        // console.log(key, value);
-
-        // console.log(localStorage.length);
-
-
-
-        // console.log(`${key}: ${value}`);
-
-        // if (youremail == `${value}` && yourpassword == `${value}`) {
-        // console.log(youremail);
-        // }
-        // }
-        // const emailvalue = localStorage.getItem("Email");
-        // const passwordvalue = localStorage.getItem("Password");
-
-        if (myTweet.length > 0) {
-            // console.log(myTweet);
-            jQuery('#tweeted').html(`<li>${myTweet}</li>`);
-        } else {
-            // jQuery('.wrong-pass').html("incorrect User or Password!!");
-            console.log("not good");
-        }
-    });
-
-
+        
+    // });
 });
