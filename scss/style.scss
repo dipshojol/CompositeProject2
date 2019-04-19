@@ -1,6 +1,40 @@
-$bg-color: blue; 
+$gray: #DCDCDC;
 
 body {
-    background: $bg-color;
+    background: $gray;
     margin: 0;
+
+    .wrong-pass{
+    	color: red;
+    }
+
+    .main-body {
+        .logo-container {
+        	width: 500px;
+        	height: 180px;
+        	border: 10px solid #362e6a;
+        	margin: 100px auto 0;
+        	text-align: center;
+            img {
+                height: 200px;
+                margin-top: -20px;
+                margin-left: 10px;
+            }
+
+        }
+        .login-section{
+        	max-width: 500px;
+        	margin: 50px auto 0;
+        	border: 2px solid #808080;
+        	padding: 30px;
+        }
+
+        .btn-container{
+        	width: 410px;
+        	margin: 100px auto 0;
+        	a{
+        		width: 200px;
+        	}
+        }
+    }
 }
