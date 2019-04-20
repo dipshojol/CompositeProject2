@@ -41,7 +41,6 @@ body {
         }
 
         .new-post-container {
-            width: 900px;
             height: 235px;
             border: 1px solid #aeb7bd;
             margin: 20px auto;
@@ -79,7 +78,7 @@ body {
 
                 a.tweet-btn {
                     position: absolute;
-                    right: 0;
+                    right: 40px;
                     top: -15px;
                     background-color: #1ca1f2 !important;
                     border-color: #1ca1f2 !important;
@@ -96,23 +95,23 @@ body {
             border-radius: 5px;
             position: relative;
 
-            span{
-            	width: 30px;
-            	display: flex;
-            	justify-content: right;
-            	align-items: right;
+            .btn-contaiber {
+            	position: absolute;
+            	right: 0;
+                div.btn-group {
 
-            	svg{
-            		height: 20px;
-            	}
+                }
             }
 
+
+
             ul#tweeted {
-                padding: 10px 0 0 0;
+                padding: 20px 0 0 0;
                 margin: 0;
                 max-width: 100%;
                 background: #fff;
                 border-radius: 3px;
+                min-height: 50px;
 
                 li {
                     list-style: none;

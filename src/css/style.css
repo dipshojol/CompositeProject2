@@ -24,7 +24,6 @@ body {
     body .main-body .btn-container a {
       width: 200px; }
   body .main-body .new-post-container {
-    width: 900px;
     height: 235px;
     border: 1px solid #aeb7bd;
     margin: 20px auto;
@@ -50,7 +49,7 @@ body {
         resize: none; }
       body .main-body .new-post-container .message-container a.tweet-btn {
         position: absolute;
-        right: 0;
+        right: 40px;
         top: -15px;
         background-color: #1ca1f2 !important;
         border-color: #1ca1f2 !important;
@@ -61,19 +60,16 @@ body {
     border: 1px solid #aeb7bd;
     border-radius: 5px;
     position: relative; }
-    body .main-body .all-tweets span {
-      width: 30px;
-      display: flex;
-      justify-content: right;
-      align-items: right; }
-      body .main-body .all-tweets span svg {
-        height: 20px; }
+    body .main-body .all-tweets .btn-contaiber {
+      position: absolute;
+      right: 0; }
     body .main-body .all-tweets ul#tweeted {
-      padding: 10px 0 0 0;
+      padding: 20px 0 0 0;
       margin: 0;
       max-width: 100%;
       background: #fff;
-      border-radius: 3px; }
+      border-radius: 3px;
+      min-height: 50px; }
       body .main-body .all-tweets ul#tweeted li {
         list-style: none;
         border-bottom: 1px solid #b2c6d6;
