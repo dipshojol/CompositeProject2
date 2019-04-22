@@ -31,7 +31,7 @@
                         </div>
                     </div>
                     <div class="col-11">
-                        <textarea id="tweet-text" rows="5" cols="60" name="comment" form="usrform" placeholder="Enter text here..."></textarea>
+                        <textarea id="tweet-text" rows="5" cols="60" name="comment" placeholder="Enter text here..."></textarea>
                     </div>
                 </div>
                 <div class="row message-container">
@@ -41,12 +41,7 @@
             <div class="all-tweets">
                 <div class="btn-contaiber">
                     <div class="btn-group">
-                        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
-                        <div class="dropdown-menu dropdown-menu-right">
-                            <button class="dropdown-item" type="button">Comments from last 1m</button>
-                            <button class="dropdown-item" type="button">Comments from last 2m</button>
-                            <button class="dropdown-item" type="button">Comments from last 5m</button>
-                        </div>
+                        <input class="form-control" id="myInput" type="text" placeholder="Search..">
                     </div>
                 </div>
                 <ul id="tweeted" class="container">

@@ -11,7 +11,11 @@ jQuery(document).ready(() => {
     const username = localStorage.getItem("Email");
 
     const liMaker = (text) => {
-        const li = `<li class='inner-li row'><div class='avatar col-1'><div class="inner-avatar"><img src="../../assets/twitter-avatar.png" alt=""></div></div><div class='user-name col-11'><h6>${username}</h6><p class='col-11'>${text}</p></div></li>`;
+        var dt = new Date();
+        var time = dt.getHours() + ":" + dt.getMinutes(); //+ ":" + dt.getSeconds();
+        
+        
+        const li = `<li class='inner-li row'><div class='avatar col-1'><div class="inner-avatar"><img src="../../assets/twitter-avatar.png" alt=""></div></div><div class='user-name col-11'><h6>${username}    ${time}</h6><p class='col-11'>${text}</p></div></li>`;
 
         jQuery('#tweeted').append(li);
     }
@@ -20,11 +24,14 @@ jQuery(document).ready(() => {
         e.preventDefault();
 
         if (myTweet.value) {
-            itemsArray.push(myTweet.value);
+
+            let tweetvalue = `${myTweet.value}`;
+
+            itemsArray.push(tweetvalue);
             localStorage.setItem('items', JSON.stringify(itemsArray));
-            liMaker(myTweet.value);
+            liMaker(tweetvalue);
             // console.log(`${itemsArray}`);
-            myTweet.value = "";
+            tweetvalue = "";
         }
     });
 

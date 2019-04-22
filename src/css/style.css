@@ -58,11 +58,9 @@ body {
     width: 800px;
     margin: 20px auto;
     border: 1px solid #aeb7bd;
-    border-radius: 5px;
-    position: relative; }
+    border-radius: 5px; }
     body .main-body .all-tweets .btn-contaiber {
-      position: absolute;
-      right: 0; }
+      margin: auto; }
     body .main-body .all-tweets ul#tweeted {
       padding: 20px 0 0 0;
       margin: 0;
