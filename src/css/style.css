@@ -58,11 +58,18 @@ body {
     width: 800px;
     margin: 20px auto;
     border: 1px solid #aeb7bd;
-    border-radius: 5px; }
+    border-radius: 5px;
+    overflow: hidden; }
     body .main-body .all-tweets .btn-contaiber {
       margin: auto; }
+      body .main-body .all-tweets .btn-contaiber div.btn-group {
+        width: 100%; }
+        body .main-body .all-tweets .btn-contaiber div.btn-group input {
+          border-color: #0e94f1;
+          border-width: 0 0 1px 0;
+          border-radius: 0; }
     body .main-body .all-tweets ul#tweeted {
-      padding: 20px 0 0 0;
+      padding: 0px 0 0 0;
       margin: 0;
       max-width: 100%;
       background: #fff;
@@ -85,6 +92,9 @@ body {
               height: 30px; }
         body .main-body .all-tweets ul#tweeted li .user-name {
           padding-left: 0; }
+          body .main-body .all-tweets ul#tweeted li .user-name span {
+            color: #9aa2aa;
+            font-style: italic; }
           body .main-body .all-tweets ul#tweeted li .user-name p {
             padding-left: 0; }
       body .main-body .all-tweets ul#tweeted :last-child {

@@ -93,21 +93,26 @@ body {
             margin: 20px auto;
             border: 1px solid #aeb7bd;
             border-radius: 5px;
+            overflow: hidden;
 
             .btn-contaiber {
-				margin: auto;
-                div.btn-group {
-                	.form-control{
+                margin: auto;
 
-                	}
+                div.btn-group {
+                    width: 100%;
+
+                    input {
+                        border-color: #0e94f1;
+                        border-width: 0 0 1px 0;
+                        border-radius: 0;
+
+                    }
 
                 }
             }
 
-
-
             ul#tweeted {
-                padding: 20px 0 0 0;
+                padding: 0px 0 0 0;
                 margin: 0;
                 max-width: 100%;
                 background: #fff;
@@ -141,6 +146,12 @@ body {
 
                     .user-name {
                         padding-left: 0;
+                        span{
+							color: #9aa2aa;
+							font-style: italic;
+
+                        }
+                        
 
                         p {
                             padding-left: 0;
