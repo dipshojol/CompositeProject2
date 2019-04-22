@@ -1,7 +1,8 @@
 "use strict";
 
-jQuery(document).ready(() => {
-
+(() => {
+    // your page initialization code here
+    // the DOM will be available here
     let itemsArray = localStorage.getItem('items') ? JSON.parse(localStorage.getItem('items')) : [];
     localStorage.setItem('items', JSON.stringify(itemsArray));
     const data = JSON.parse(localStorage.getItem('items'));
@@ -11,13 +12,12 @@ jQuery(document).ready(() => {
     const username = localStorage.getItem("Email");
 
     const liMaker = (text) => {
-
         const li = `<li class='inner-li row'><div class='avatar col-1'><div class="inner-avatar"><img src="../../assets/twitter-avatar.png" alt=""></div></div><div class='user-name col-11'><span>${username}</span><p class='col-11 user-tweet'>${text}</p></div></li>`;
-
         jQuery('#tweeted').append(li);
     }
 
-    jQuery('.tweet-btn').on('click', (e) => {
+    document.querySelector('.tweet-btn').addEventListener('click', (e) => {
+        
         e.preventDefault();
 
         if (myTweet.value) {
@@ -34,7 +34,7 @@ jQuery(document).ready(() => {
         liMaker(item);
     });
 
-    jQuery('.clear-btn').on('click', () => {
+    document.querySelector('.clear-btn').addEventListener('click', () => {
         localStorage.clear();
         while (ul.firstChild) {
             ul.removeChild(ul.firstChild);
@@ -42,7 +42,7 @@ jQuery(document).ready(() => {
         itemsArray = [];
     });
 
-    jQuery('#myInput').on('keyup', () => {
+    document.getElementById('myInput').addEventListener('keyup', () => {
 
         let li = document.querySelectorAll('li.inner-li'); //get all the li's
 
@@ -58,4 +58,4 @@ jQuery(document).ready(() => {
             }
         }
     });
-});
+})();

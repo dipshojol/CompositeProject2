@@ -1,37 +1,21 @@
 "use strict";
 
-// alert("this is my js")
-jQuery(document).ready(() => {
-    jQuery('.signup-btn').on('click', () => {
-        let myemail = jQuery('#email').val();
-        let mypassword = jQuery('#pwd').val();
-        let mypasswordTwo = jQuery('#confirm-pwd').val();
+(() => {
+    // your page initialization code here
+    // the DOM will be available here
+    const siButton = document.querySelector(".signin-btn");
+    siButton.addEventListener('click', event => { // vanila js class selector
 
-        console.log(myemail.length);
-        console.log(mypassword);
+        let siEmail = document.getElementById('signinEmail').value; //id selector with value
+        let siPassword = document.getElementById('signinPassword').value; //id selector with value
 
-        if (myemail && mypassword == mypasswordTwo && myemail.length >= 5 && mypassword.length >= 5) {
-                localStorage.setItem('Email', myemail);
-                localStorage.setItem('Password', mypassword);
-                // }
-                window.location = '../other-pages/sign-in.html';
+        const emailFromLh = localStorage.getItem("Email"); //rendering localstorage value
+        const passwordFromLh = localStorage.getItem("Password"); //rendering localstorage value
+
+        if (siEmail == emailFromLh && siPassword == passwordFromLh) { //when typed email/pass and localstorage email/pass matched
+            window.location = '../other-pages/review.html'; //go to review page
         } else {
-            jQuery('.please-enter').html("Please enter you email and password");
+            document.querySelector('.wrong-pass').innerHTML("incorrect User or Password!!"); //through an wornning message
         }
     });
-
-
-    jQuery('.signin-btn').on('click', () => {
-        let youremail = jQuery('#youremail').val();
-        let yourpassword = jQuery('#yourpassword').val();
-        const emailvalue = localStorage.getItem("Email");
-        const passwordvalue = localStorage.getItem("Password");
-
-        if (youremail == emailvalue && yourpassword == passwordvalue && emailvalue.length >= 5 && passwordvalue.length >= 5) {
-            // console.log("corrent");
-            window.location = '../other-pages/review.html';
-        } else {
-            jQuery('.wrong-pass').html("incorrect User or Password!!");
-        }
-    });
-});
+})();
