@@ -16,7 +16,7 @@
 
             window.location = '../other-pages/sign-in.html';
         } else {
-            document.querySelector('.please-enter').innerHTML("Please enter you email and password");
+            document.getElementById('#please-enter').innerHTML = "Please enter you email and password";
         }
     });
 })();

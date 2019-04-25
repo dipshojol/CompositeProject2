@@ -15,7 +15,7 @@
         if (siEmail == emailFromLh && siPassword == passwordFromLh) { //when typed email/pass and localstorage email/pass matched
             window.location = '../other-pages/review.html'; //go to review page
         } else {
-            document.querySelector('.wrong-pass').innerHTML("incorrect User or Password!!"); //through an wornning message
+            document.querySelector('.wrong-pass').innerHTML ="incorrect User or Password!!"; //through an wornning message
         }
     });
 })();
