@@ -9,11 +9,10 @@ body {
   body .main-body .logo-container {
     width: 360px;
     height: 220px;
-    border: 10px solid #00559045;
-    margin: 30px auto 0;
+    margin: 50px auto 0;
     text-align: center; }
     body .main-body .logo-container img {
-      height: 200px; }
+      height: 500px; }
   body .main-body .login-section {
     max-width: 500px;
     margin: 30px auto 0;
