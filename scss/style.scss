@@ -1,0 +1,189 @@
+$gray: #e6ecf0;
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+    background: $gray;
+    margin: 0;
+    zoom: 75%;
+
+    .wrong-pass,
+    .please-enter {
+        color: red;
+    }
+
+    .main-body {
+        .logo-container {
+            width: 360px;
+            height: 220px;
+            // border: 10px solid #00559045;
+            margin: 50px auto 0;
+            text-align: center;
+
+            img {
+                height: 500px;
+            }
+
+        }
+
+        .login-section {
+            max-width: 500px;
+            margin: 30px auto 0;
+            border: 2px solid #808080;
+            padding: 30px;
+        }
+
+        .btn-container {
+            width: 410px;
+            margin: 100px auto 0;
+
+            a {
+                width: 200px;
+            }
+        }
+
+        .new-post-container {
+            height: 235px;
+            border: 1px solid #aeb7bd;
+            margin: 20px auto;
+            background: #fff;
+            border-radius: 5px;
+
+            .message-container {
+                margin: 20px auto;
+                width: 700px;
+                position: relative;
+                // background-color: #1ca1f2;
+                // border-color: #1ca1f2;
+
+                // border: 1px solid;
+                .avatar {
+                    width: 30px;
+                    height: 30px;
+                    // border: 1px solid #;
+                    border-radius: 50%;
+                    overflow: hidden;
+
+                    img {
+                        height: 30px;
+                    }
+                }
+
+                textarea {
+                    border: none;
+                    border-radius: 6px;
+                    padding: 12px 20px;
+                    box-sizing: border-box;
+                    background: #f5f8fa;
+                    resize: none;
+                }
+
+                a.tweet-btn {
+                    position: absolute;
+                    right: 40px;
+                    top: -15px;
+                    background-color: #1ca1f2 !important;
+                    border-color: #1ca1f2 !important;
+                    cursor: pointer;
+                }
+
+            }
+        }
+
+        .all-tweets {
+            width: 800px;
+            margin: 20px auto;
+            border: 1px solid #aeb7bd;
+            border-radius: 5px;
+            overflow: hidden;
+
+            .btn-contaiber {
+                margin: auto;
+
+                div.btn-group {
+                    width: 100%;
+
+                    input {
+                        border-color: #0e94f1;
+                        border-width: 0 0 1px 0;
+                        border-radius: 0;
+
+                    }
+
+                }
+            }
+
+            ul#tweeted {
+                padding: 0px 0 0 0;
+                margin: 0;
+                max-width: 100%;
+                background: #fff;
+                border-radius: 3px;
+                min-height: 50px;
+
+                li {
+                    list-style: none;
+                    // border-top: 1px solid;
+                    border-bottom: 1px solid #b2c6d6;
+                    padding-top: 10px;
+                    margin: 0;
+
+                    .avatar {
+                        margin-top: 1px;
+
+
+                        .inner-avatar {
+                            width: 30px;
+                            height: 30px;
+                            // border: 1px solid #;
+                            border-radius: 50%;
+                            overflow: hidden;
+                            padding-left: 0 !important;
+
+                            img {
+                                height: 30px;
+                            }
+                        }
+                    }
+
+                    .user-name {
+                        padding-left: 0;
+                        span{
+							color: #9aa2aa;
+							font-style: italic;
+
+                        }
+                        
+
+                        p {
+                            padding-left: 0;
+                        }
+                    }
+                }
+
+                :last-child {
+                    border-bottom: 0;
+                }
+            }
+        }
+
+        .container {
+            max-width: 720px;
+        }
+
+        .clear-btn-container {
+            width: 1080px;
+            margin: 20px auto;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            a.clear-btn {
+                background: black !important;
+                cursor: pointer;
+                width: 300px;
+            }
+
+        }
+    }
+}
